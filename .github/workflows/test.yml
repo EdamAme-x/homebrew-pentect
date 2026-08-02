@@ -23,5 +23,5 @@ jobs:
       - name: Audit and install
         run: |
           brew style Formula/pentect.rb
-          brew install --formula ./Formula/pentect.rb
+          brew install EdamAme-x/pentect/pentect
           pentect version
