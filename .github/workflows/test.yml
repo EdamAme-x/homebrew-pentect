@@ -30,6 +30,6 @@ jobs:
             echo "package-managed uninstall unexpectedly succeeded" >&2
             exit 1
           fi
-          grep -q "managed by homebrew" uninstall.err
+          test -x "$(command -v pentect)"
           brew uninstall EdamAme-x/pentect/pentect
           test ! -e "$(brew --prefix)/bin/pentect"
